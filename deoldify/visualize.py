@@ -1,7 +1,10 @@
 from fastai.core import *
 from fastai.vision import *
 from matplotlib.axes import Axes
-from .filters import IFilter, MasterFilter, ColorizerFilter
+
+# from .filters import IFilter, MasterFilter, ColorizerFilter CHANGED THIS IN AN ATTEMPT TO ADDRESS FUNCTION
+from filters import IFilter, MasterFilter, ColorizerFilter
+
 from .generators import gen_inference_deep, gen_inference_wide
 from PIL import Image
 import ffmpeg
