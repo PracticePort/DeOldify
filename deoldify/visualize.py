@@ -485,3 +485,11 @@ def show_video_in_notebook(video_path: Path):
             )
         )
     )
+
+
+
+
+def colorize_from_local_path(self, source_path, file_name, render_factor, post_process=True, watermarked=True):
+    video_path = self._colorize_from_path(source_path, render_factor=render_factor, post_process=post_process, watermarked=watermarked)
+    return video_path
+
