@@ -491,9 +491,23 @@ def show_video_in_notebook(video_path: Path):
     )
 
 
+#trying this function per commented out attempt below - code by ChatGPT
+def colorize_from_local_path(
+    self,
+    source_path: Path,
+    file_name: str,
+    render_factor: int = None,
+    post_process: bool = True,
+    watermarked: bool = True
+) -> Path:
+    source_path = source_path / file_name
+    return self._colorize_from_path(
+        source_path, render_factor=render_factor, post_process=post_process, watermarked=watermarked
+    )
 
 
-def colorize_from_local_path(self, source_path, file_name, render_factor, post_process=True, watermarked=True):
+
+'''def colorize_from_local_path(self, source_path, file_name, render_factor, post_process=True, watermarked=True):
     video_path = self._colorize_from_path(source_path, render_factor=render_factor, post_process=post_process, watermarked=watermarked)
-    return video_path
+    return video_path FIRST ATTEMPT COMMENTED OUT'''
 
