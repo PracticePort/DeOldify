@@ -4,9 +4,16 @@ from matplotlib.axes import Axes
 
 # from .filters import IFilter, MasterFilter, ColorizerFilter CHANGED THIS IN AN ATTEMPT TO ADDRESS FUNCTION and is now changed back b/c it doesn't work
 # from filters import IFilter, MasterFilter, ColorizerFilter
-from .filters import IFilter, MasterFilter, ColorizerFilter
+#from .filters import IFilter, MasterFilter, ColorizerFilter
 
-from .generators import gen_inference_deep, gen_inference_wide
+#from .generators import gen_inference_deep, gen_inference_wide
+
+from deoldify.filters import IFilter, MasterFilter, ColorizerFilter
+from deoldify.generators import gen_inference_deep, gen_inference_wide
+#from PIL import Image nothing changed so commenting out the new one, temp update that might be removed post haste
+
+# The rest of your `visualize.py` code here
+
 from PIL import Image
 import ffmpeg
 import yt_dlp as youtube_dl
